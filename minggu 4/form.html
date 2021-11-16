@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formulir ppdb</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            form{
+                width:50%; 
+                height: 100%;
+                margin:0 auto;
+                text-align:center;
+               
+            }
+            table {
+                margin: auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <div class="pusat">
+                <h1 style="font-size: medium; font-style: initial;">FORMULIR PPDB JALUR ZONASI</h1>
+                <form action="proses.php" method="post">
+                    <p><b>Pendaftaran</b></p>
+                    <table>
+                        <tr>
+                            <td>NISN</td>
+                            <td>:</td>
+                            <td><input type="number" name="NISN"></td>
+                        </tr>
+                        <tr>
+                            <td>Asal Sekolah</td>
+                            <td>:</td>
+                            <td><input type="text" name="Asal_Sekolah"></td>
+                        </tr>
+                        <tr>
+                        <label for=""></label>
+                            <td>Tahun Lulus</td>
+                            <td>:</td>
+                            <td><select name="Tahun Lulus">
+                                <option>--pilih tahun--</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                </select>
+                            </td>
+                        </tr>
+                    
+                    </table>
+
+                    <p><b>Calon Peserta</b></p>
+                    <table>
+                        <tr>
+                            <td>Nama Lengkap</td>
+                            <td>:</td>
+                            <td><input type="text" name="Nama_Lengkap"></td>
+                        </tr>
+                        <tr>
+                            <td>NIK</td>
+                            <td>:</td>
+                            <td><input type="number" name="NIK"></td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Lahir</td>
+                            <td>:</td>
+                            <td><input type="text" name="Tempat_Lahir"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td><input type="date" name="Tempat_Lahir"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td><input type="radio" name="jk" value="Laki-laki">Laki-laki
+                                <input type="radio" name="jk" value="Perempuan">Perempuan</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>:</td>
+                            <td><textarea name="Alamat"></textarea></td>
+                        </tr>
+                      
+                            <label for=""></label>
+                            <td>Kelurahan</td>
+                            <td>:</td>
+                            <td><select name="Kelurahan1">
+                                    <option >--pilih kelurahan--</option>
+                                    <option >Banyumanik</option>
+                                    <option >Gedawang</option>
+                                    <option >Jabungan</option>
+                                    <option>Ngesrep</option>
+                                    <option>Padangsari</option>
+                                    <option>Pedalangan</option>
+                                    <option>PudakPayung</option>
+                                    <option>Sumurboto</option>
+                                    <option>SrondolKulon</option>
+                                </select>
+                            </td>
+                       
+                        <tr>
+                            <td>Kecamatan</td>
+                            <td>:</td>
+                            <td><select name="Kecamatan1">
+                                    <option>--pilih kecamatan--</option>
+                                    <option>Banyumanik</option>
+                                    <option>Candisari</option>
+                                    <option>GajahMungkur</option>
+                                    <option>GayamSari</option>
+                                    <option>Genuk</option>
+                                    <option>Mijen</option>
+                                    <option>Ngaliyan</option>
+                                    <option>Tugu</option>
+                                    <option>SemarangSelatan</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Provinsi</td>
+                            <td>:</td>
+                            <td><select name="Provinsi1">
+                                    <option>--pilih provinsi--</option>
+                                    <option>Jawa Tengah</option>
+                                    <option>Jawa Timur</option>
+                                    <option>Jawa Barat</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kabupaten</td>
+                            <td>:</td>
+                            <td><select name="Kabupaten1">
+                                    <option>--pilih kabupaten--</option>
+                                    <option>Kab.Cilacap</option>
+                                    <option>Kab.Purbalingga</option>
+                                    <option>Kab.Banyumas</option>
+                                    <option>Kab.Banjarnegara</option>
+                                    <option>Kab.Wonogiri</option>
+                                    <option>Kab.Klaten</option>
+                                    <option>Kab.Semarang</option>
+                                    <option>Kab.Pati</option>
+                                    <option>Kab.Sragen</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>E-mail Aktif</td>
+                            <td>:</td>
+                            <td><input type="email" name="E-mail_Aktif"></td>
+                        </tr>
+                    </table>
+                    <p><b>Data Orang Tua</b></p>
+                    <table>
+                        <tr>
+                            <td>Nomer Kartu Keluarga</td>
+                            <td>:</td>
+                            <td><input type="number" name="Nomer_Kartu_Keluarga"></td>
+                        </tr>
+                        <tr>
+                                <td>Nama Ayah Kandung</td>
+                                <td>:</td>
+                            <td><input type="text" name=">Nama_Ayah_Kandung"></td>
+                        </tr>
+                        <tr>
+                            <td>Agama</td>
+                            <td>:</td>
+                            <td><select name="Agama1">
+                                <option>--pilih agama--</option>
+                                <option>Islam</option>
+                                <option>Kristen</option>
+                                <option>Hindu</option>
+                                <option>Budha</option>
+                                <option>Katholik</option>
+                                <option>Atheis</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pekerjaan</td>
+                            <td>:</td>
+                            <td><input type="text" name="Pekerjaan"></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>Nama Ibu Kandung</td>
+                            <td>:</td>
+                            <td><input type="text" name=">Nama_Ibu_Kandung"></td>
+                        </tr>
+                        <tr>
+                            <td>Agama</td>
+                            <td>:</td>
+                            <td><select name="Agama2">
+                                    <option>--pilih agama--</option>
+                                    <option>Islam</option>
+                                    <option>Kristen</option>
+                                    <option>Hindu</option>
+                                    <option>Budha</option>
+                                    <option>Katholik</option>
+                                    <option>Atheis</option></select>
+                                    </td>
+                        </tr>
+                        <tr>
+                            <td>Pekerjaan</td>
+                            <td>:</td>
+                            <td><input type="text" name="Pekerjaan"></td>
+                        </tr>
+                        <tr>
+                            <td>Alamat Orang Tua</td>
+                            <td>:</td>
+                            <td><textarea name="Alamat_Orang_Tua"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Kelurahan</td>
+                            <td>:</td>
+                            <td><select name="Kelurahan2">
+                                    <option>--pilih kelurahan--</option>
+                                    <option>Banyumanik</option>
+                                    <option>Gedawang</option>
+                                    <option>Jabungan</option>
+                                    <option>Ngesrep</option>
+                                    <option>Padangsari</option>
+                                    <option>Pedalangan</option>
+                                    <option>PudakPayung</option>
+                                    <option>Sumurboto</option>
+                                    <option>SrondolKulon</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kecamatan</td>
+                            <td>:</td>
+                            <td><select name="Kecamatan2">
+                                    <option>--pilih kecamatan--</option>
+                                    <option>Banyumanik</option>
+                                    <option>Candisari</option>
+                                    <option>GajahMungkur</option>
+                                    <option>GayamSari</option>
+                                    <option>Genuk</option>
+                                    <option>Mijen</option>
+                                    <option>Ngaliyan</option>
+                                    <option>Tugu</option>
+                                    <option>SemarangSelatan</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Provinsi</td>
+                            <td>:</td>
+                            <td><select name="Provinsi2">
+                                    <option>--pilih provinsi--</option>
+                                    <option>Jawa Tengah</option>
+                                    <option>Jawa Timur</option>
+                                    <option>Jawa Barat</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kabupaten</td>
+                            <td>:</td>
+                            <td><select name="Kabupaten2">
+                                    <option>--pilih kabupaten--</option>
+                                    <option>Kab.Cilacap</option>
+                                    <option>Kab.Purbalingga</option>
+                                    <option>Kab.Banyumas</option>
+                                    <option>Kab.Banjarnegara</option>
+                                    <option>Kab.Wonogiri</option>
+                                    <option>Kab.Klaten</option>
+                                    <option>Kab.Semarang</option>
+                                    <option>Kab.Pati</option>
+                                    <option>Kab.Sragen</option></select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button type="submit" name="kirim">Kirim</button>
+                                <button type="reset" name="reset">Batal</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+       
+    </body>
+
+</html>
